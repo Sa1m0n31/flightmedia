@@ -1,0 +1,366 @@
+@media(max-width: 1700px) {
+    .landing {
+        padding: 0 5%;
+    }
+
+    .portfolio__item__desc {
+        padding: 5%;
+    }
+}
+
+@media(max-width: 1500px) {
+    .landing__header {
+        font-size: 50px;
+    }
+
+    .landing__text {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .landing__btn {
+        font-size: 24px;
+        width: 250px;
+        height: 60px;
+    }
+
+    .aboutUs__img {
+        width: 40%;
+        height: auto;
+    }
+
+    .aboutUs__header {
+        font-size: 24px;
+    }
+
+    .aboutUs__text {
+        font-size: 15px;
+    }
+
+    .categories__icon {
+        transform: scale(.8);
+    }
+
+    .categories__title {
+        font-size: 18px;
+    }
+
+    .categories__text {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .categories__btn {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 1300px) {
+    .portfolio__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio__item__desc {
+        padding: 12%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .aboutUs__text {
+        font-size: 14px;
+    }
+
+    .portfolio__menu__item {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .aboutUs__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__menu__item {
+        font-size: 15px;
+    }
+
+    .portfolio__main .portfolio__item {
+        width: 50%;
+    }
+
+    .aboutUs__img {
+        width: 80%;
+    }
+
+    .aboutUs__desc {
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutUs__header {
+        text-align: center;
+    }
+
+    .categories__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categories__item {
+        width: 25%;
+        margin: 20px !important;
+    }
+
+    .contact__header, .contact__info__item {
+        font-size: 18px;
+    }
+
+    .contact__info {
+        width: 80%;
+    }
+
+    .categoryPortfolio__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoryMain__title {
+        font-size: 40px;
+    }
+
+    .categoryMain__text {
+        font-size: 14px;
+    }
+
+    .categoryMain__btn {
+        font-size: 18px;
+        width: 200px;
+    }
+}
+
+@media(max-width: 800px) {
+    .sectionHeader {
+        font-size: 24px;
+    }
+
+    .aboutUs {
+        margin-top: 40px;
+    }
+
+    .aboutUs__img {
+        width: 100%;
+    }
+
+    .categories__inner {
+        flex-direction: column;
+    }
+
+    .categories__item {
+        width: 100%;
+        padding: 0 20%;
+        margin: 0 0 60px 0 !important;
+    }
+
+    .portfolio__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__item__desc {
+        opacity: 1 !important;
+        background: rgba(0, 0, 0, .6) !important;
+    }
+
+    .portfolio__item__desc * {
+        opacity: 1 !important;
+    }
+
+    .portfolio__subheader {
+        font-size: 18px;
+    }
+
+    .contact__form {
+        width: 80%;
+    }
+
+    .contact__info__item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact__info {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .topMenu__list {
+        display: none;
+    }
+
+    .topMenu__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .topMenu__mobile {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #000;
+        padding: 0;
+        width: 100%;
+        height: 0;
+        transition: .3s all;
+        z-index: -1;
+    }
+
+    .topMenu__close {
+        display: none;
+        position: absolute;
+        top: 12px;
+        right: 5%;
+        font-size: 40px;
+        background: transparent;
+    }
+
+    .topMenu__close__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .topMenu__mobile li {
+        margin: 10px 0;
+        padding: 10px 0;
+        text-align: center;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transition: .3s all;
+        display: none;
+    }
+
+    .topMenu__item__img {
+        margin-bottom: 7px;
+        transform: scale(.4);
+    }
+
+    .hamburgerLine {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .header__header {
+        font-size: 18px;
+    }
+
+    .categoryMain {
+        padding-top: 150px;
+    }
+
+    .portfolio__menu__list {
+        flex-wrap: wrap;
+    }
+
+    .portfolio__menu__item {
+        white-space: nowrap;
+    }
+
+    .portfolio__main .portfolio__item {
+        width: 100%;
+    }
+
+    .categories {
+        margin-top: 100px;
+    }
+
+    .portfolio {
+        margin-top: -130px;
+    }
+
+    .contact {
+        margin-top: 90px;
+    }
+}
+
+@media(max-width: 600px) {
+    .landing {
+        max-height: 700px;
+    }
+
+    .landing__content {
+        padding-top: 30vh;
+    }
+
+    .landing__header {
+        font-size: 20px;
+    }
+
+    .landing__text, .landing__btn {
+        font-size: 13px;
+    }
+
+    .landing__text {
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .landing__btn {
+        width: 160px;
+        height: 45px;
+    }
+
+    .portfolio__item__btn {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .portfolio__item__text {
+        margin: 15px 0;
+    }
+
+    .categories__item {
+        padding: 0 5%;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__header, .contact__info__item {
+        font-size: 15px;
+    }
+
+    .footer__label {
+        font-size: 12px;
+    }
+
+    .footer {
+        padding-bottom: 5px;
+    }
+
+    .categoryMain__text {
+        width: 90%;
+    }
+}
