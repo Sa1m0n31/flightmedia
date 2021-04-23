@@ -14,34 +14,36 @@
     <!-- HEADER -->
     <header class="header">
         <h1 class="header__header">
-            <a href="./index.html">LOGO</a>
+            <a href="<?php echo get_home_url(); ?>">
+                <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/logo.png'; ?>" alt="logo" />
+            </a>
         </h1>
 
         <menu class="topMenu">
             <ul class="topMenu__mobile">
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
-                    <a href="./kategoria.html">Luftfoto</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">Luftfoto</a>
                 </li>
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/aerial-advertising.svg'; ?>" alt="road" />
-                    <a href="./kategoria.html">Bedrifts reklamer</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">Bedrifts reklamer</a>
                 </li>
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/property.svg'; ?>" alt="road" />
-                    <a href="./kategoria.html">Eiendom</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">Eiendom</a>
                 </li>
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/wedding-ring.svg'; ?>" alt="road" />
-                    <a href="./kategoria.html">Bryllup</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">Bryllup</a>
                 </li>
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/drone.svg'; ?>" alt="road" />
-                    <a href="./kategoria.html">Droneinspeksjon</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">Droneinspeksjon</a>
                 </li>
                 <li class="topMenu__item">
                     <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
-                    <a href="./portfolio.html">Portfolio</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">Portfolio</a>
                 </li>
             </ul>
             <div class="topMenu__hamburger" onclick="openMobileMenu()">
@@ -54,40 +56,40 @@
             </button>
 
             <ul class="topMenu__list">
-                <li class="topMenu__item" onclick="goTo(0)">
-                    Om oss
+                <li class="topMenu__item">
+                    <a href="<?php echo get_home_url() . '/#aboutUs'; ?>">Om oss</a>
                 </li>
                 <li class="topMenu__item topMenu__item--withDropdown">
                     By pa
                     <img class="topMenu__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/down.svg'; ?>" alt="down" />
                     <ul class="topMenu__dropdown">
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Luftfoto</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">Luftfoto</a>
                         </li>
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Bedrifts reklamer</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">Bedrifts reklamer</a>
                         </li>
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Eiendom</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">Eiendom</a>
                         </li>
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Bryllup</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">Bryllup</a>
                         </li>
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Droneinspeksjon</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">Droneinspeksjon</a>
                         </li>
                         <li class="topMenu__dropdown__item">
-                            <a href="./kategoria.html">Portfolio</a>
+                            <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">Portfolio</a>
                         </li>
                     </ul>
                 </li>
                 <li class="topMenu__item">
-                    <a href="portfolio.html">
+                    <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">
                         Portfolio
                     </a>
                 </li>
-                <li class="topMenu__item" onclick="goTo(1)">
-                    Kontakt
+                <li class="topMenu__item">
+                    <a href="<?php echo get_home_url() . '/#contact'; ?>">Kontakt</a>
                 </li>
             </ul>
         </menu>

@@ -140,8 +140,8 @@ add_action( 'widgets_init', 'skyloportfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function skyloportfolio_scripts() {
-	wp_enqueue_style( 'skyloportfolio-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'skyloportfolio-mobile', get_stylesheet_directory() . '/mobile.css', array(), _S_VERSION );
+	wp_enqueue_style( 'skyloportfolio-style', get_stylesheet_uri() . '?n=1', array(), _S_VERSION );
+	wp_enqueue_style( 'skyloportfolio-mobile', get_template_directory_uri() . '/mobile.css?n=1', array(), _S_VERSION );
 
 	wp_enqueue_script( 'skyloportfolio-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 

@@ -1,26 +1,3 @@
-/* Site menu */
-const goTo = n => {
-    let el;
-    if(n === 0) {
-        el = document.querySelector("#aboutUs");
-        if(!el) {
-            window.location.href = "./index.html#aboutUs";
-        }
-    }
-    else {
-        el = document.querySelector("#contact");
-        if(!el) {
-            window.location.href = "./index.html#contact";
-        }
-    }
-    if(el) {
-        el.scrollIntoView({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-}
-
 /* Change menu background */
 const siteHeader = document.querySelector(".header");
 window.addEventListener("scroll", () => {

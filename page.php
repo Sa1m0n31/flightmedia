@@ -6,13 +6,13 @@ get_header();
 <main class="categoryMain">
     <header class="categoryMain__header">
         <h1 class="categoryMain__title">
-            Kategoria
+            <?php echo the_title(); ?>
         </h1>
         <p class="categoryMain__text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+            <?php echo get_the_content(); ?>
         </p>
         <button class="categoryMain__btn">
-            <a href="./portfolio.html">
+            <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">
                 Portfolio
             </a>
         </button>

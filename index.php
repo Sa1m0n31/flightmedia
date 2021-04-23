@@ -5,15 +5,15 @@ get_header();
 <!-- LANDING -->
 <main class="landing">
     <header class="landing__content">
-        <h2 class="landing__header">
+        <h1 class="landing__header">
             Jakiś nagłówek
-        </h2>
+        </h1>
         <p class="landing__text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
         </p>
-        <button class="landing__btn" onclick="goTo(1)">
+        <a class="landing__btn" href="#contact">
             Kontakt
-        </button>
+        </a>
     </header>
 </main>
 <!-- O NAS -->
@@ -53,7 +53,7 @@ get_header();
             <p class="categories__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             </p>
-            <a class="categories__btn" href="./kategoria.html">
+            <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">
                 Mer informasjon
             </a>
         </div>
@@ -66,7 +66,7 @@ get_header();
             <p class="categories__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             </p>
-            <a class="categories__btn" href="./kategoria.html">
+            <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">
                 Mer informasjon
             </a>
         </div>
@@ -79,7 +79,7 @@ get_header();
             <p class="categories__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             </p>
-            <a class="categories__btn" href="./kategoria.html">
+            <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">
                 Mer informasjon
             </a>
         </div>
@@ -92,7 +92,7 @@ get_header();
             <p class="categories__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             </p>
-            <a class="categories__btn" href="./kategoria.html">
+            <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">
                 Mer informasjon
             </a>
         </div>
@@ -105,7 +105,7 @@ get_header();
             <p class="categories__text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             </p>
-            <a class="categories__btn" href="./kategoria.html">
+            <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">
                 Mer informasjon
             </a>
         </div>
@@ -193,12 +193,12 @@ get_header();
             </label>
             <label>
                 <textarea class="contact__form__input"
-                          placeholder="Wiadomość"
+                          placeholder="Melding"
                 ></textarea>
             </label>
 
             <button class="contact__form__btn" type="submit">
-                Wyślij formularz
+                Send melding
             </button>
         </form>
     </div>
