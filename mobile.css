@@ -78,6 +78,20 @@
 }
 
 @media(max-width: 1000px) {
+    .topMenu {
+        min-width: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__caption__img {
+        display: none;
+    }
+
+    .topMenu__item {
+        margin: 0 12px;
+    }
+
     .aboutUs__inner {
         flex-direction: column;
         align-items: center;
@@ -143,6 +157,14 @@
 }
 
 @media(max-width: 800px) {
+    .header__caption__img {
+        display: flex;
+    }
+
+    .topMenu {
+        min-width: auto;
+    }
+
     .sectionHeader {
         font-size: 24px;
     }
@@ -304,7 +326,8 @@
     }
 
     .header__logo {
-        height: 50px;
+        height: 70px;
+        transform: translate(-20px, 5px);
     }
 }
 
@@ -366,5 +389,10 @@
 
     .categoryMain__text {
         width: 90%;
+    }
+
+    .header__caption__img {
+        width: 65%;
+        margin-left: 5px;
     }
 }

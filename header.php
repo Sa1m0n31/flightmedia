@@ -13,11 +13,14 @@
 <div class="container">
     <!-- HEADER -->
     <header class="header">
-        <h1 class="header__header">
+        <div class="header__header">
             <a href="<?php echo get_home_url(); ?>">
                 <img class="header__logo" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/logo.png'; ?>" alt="logo" />
             </a>
-        </h1>
+        </div>
+        <div class="header__caption">
+            <img class="header__caption__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/header-napis.png'; ?>" alt="Vi flyr høyt" />
+        </div>
 
         <menu class="topMenu">
             <ul class="topMenu__mobile">

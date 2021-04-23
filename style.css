@@ -87,8 +87,21 @@ ul {
 }
 
 .header__logo {
-	height: 100px;
+	height: 120px;
 	width: auto;
+	transform: translateX(-20px);
+}
+
+.header__caption__img {
+	width: 50%;
+	max-width: 500px;
+	height: auto;
+	margin-left: 50px;
+	display: flex;
+}
+
+.topMenu {
+	min-width: 500px;
 }
 
 .topMenu__list {

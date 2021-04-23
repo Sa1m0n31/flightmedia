@@ -172,7 +172,7 @@ get_header();
                        placeholder="Name"
                 />
                 <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/user_square.svg'; ?>" alt="name" />
+                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/user_square.svg?n=1'; ?>" alt="name" />
                 </div>
             </label>
             <label>
@@ -180,7 +180,7 @@ get_header();
                        placeholder="Phone number"
                 />
                 <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/phone-call.svg'; ?>" alt="phone" />
+                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/phone-call.svg?n=1'; ?>" alt="phone" />
                 </div>
             </label>
             <label>
@@ -188,7 +188,7 @@ get_header();
                        placeholder="Email"
                 />
                 <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/mail.svg'; ?>" alt="mail" />
+                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/mail.svg?n=1'; ?>" alt="mail" />
                 </div>
             </label>
             <label>
