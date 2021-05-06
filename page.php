@@ -11,11 +11,15 @@ get_header();
         <p class="categoryMain__text">
             <?php echo get_the_content(); ?>
         </p>
+
         <button class="categoryMain__btn">
             <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">
                 Portfolio
             </a>
         </button>
+
+        <img class="categoryMain__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/droneinspeksjon-background.jpg' ?>" alt="category-img" />
+
     </header>
 </main>
 <section class="categoryPortfolio">
@@ -37,9 +41,6 @@ get_header();
                         <p class="portfolio__item__text">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
                         </p>
-                        <button class="portfolio__item__btn">
-                            Więcej
-                        </button>
                     </div>
                 </div>
                 <?php

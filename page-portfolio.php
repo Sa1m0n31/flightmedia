@@ -45,9 +45,6 @@ get_header();
                         <p class="portfolio__item__text">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
                         </p>
-                        <button class="portfolio__item__btn">
-                            Więcej
-                        </button>
                     </div>
                 </div>
 

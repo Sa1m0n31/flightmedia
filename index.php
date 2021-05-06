@@ -26,14 +26,16 @@ get_header();
         <img class="aboutUs__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/about-us.png'; ?>" alt="um-oss" />
         <div class="aboutUs__desc">
             <h4 class="aboutUs__header">
-                Lorem ipsum
+                Hei, så hyggelig at du tok oss til vurdering.
             </h4>
             <p class="aboutUs__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                Hos Flightmedia møter du profesjonelle fotografer med bred kompetanse både innenfor film og fotografering. Vi tar bilder og film fra luften med topp moderne utstyr og har alle tillatelser for å kunne levere et godt produkt.
             </p>
             <p class="aboutUs__text">
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                Vi fanger momentene som får deg eller, bedriften din til å stråle. Vi jakter på de flyktige glimtene som rommer et lite blikk, som forsvinner like fort som de kom.
             </p>
+            <p class="aboutUs__text">
+                Vi gir deg minner for resten av livet
             </p>
         </div>
     </div>
@@ -51,7 +53,7 @@ get_header();
                 Luftfoto
             </h4>
             <p class="categories__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                Drone er blitt et vanlig redskap for fotografering og film. Bilder fra lufta gir unik oversikt og forteller om lokasjonen og størrelsen.
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">
                 Mer informasjon
@@ -64,7 +66,7 @@ get_header();
                 Bedrifts reklamer
             </h4>
             <p class="categories__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                Bedrifts reklamer er en optimal løsning som kobler sammen kreativitet, med god forståelse for merkevaren. Dronefilm gjør som regel det lille ekstra innenfor en reklame. Bilder / video som skal selge må kommunisere godt, og jeg hjelper deg med det.
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">
                 Mer informasjon
@@ -77,7 +79,7 @@ get_header();
                 Eiendom
             </h4>
             <p class="categories__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                Vi tar foto og dronefoto av bygg og eiendom i forbindelse med salg, visualisering, dokumentasjon og utleie.
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">
                 Mer informasjon
@@ -90,7 +92,7 @@ get_header();
                 Bryllup
             </h4>
             <p class="categories__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                Bryllupsfotografen dere velger har en stor påvirkning på hvordan dere vil huske denne dagen senere. Her er det kun fantasien som kan stoppe oss.
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">
                 Mer informasjon
@@ -103,7 +105,7 @@ get_header();
                 Droneinspeksjon
             </h4>
             <p class="categories__text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                Vi tilbyr inspeksjon av installasjoner, tak og andre elementer i høyden, på en enkel måte.
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">
                 Mer informasjon
@@ -136,9 +138,6 @@ get_header();
                         <p class="portfolio__item__text">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
                         </p>
-                        <button class="portfolio__item__btn">
-                            Więcej
-                        </button>
                     </div>
                 </div>
         <?php
