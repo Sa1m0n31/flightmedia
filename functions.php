@@ -140,10 +140,10 @@ add_action( 'widgets_init', 'skyloportfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function skyloportfolio_scripts() {
-	wp_enqueue_style( 'skyloportfolio-style', get_stylesheet_uri() . '?n=3', array(), _S_VERSION );
-	wp_enqueue_style( 'skyloportfolio-mobile', get_template_directory_uri() . '/mobile.css?n=3', array(), _S_VERSION );
+	wp_enqueue_style( 'skyloportfolio-style', get_stylesheet_uri() . '?n=6', array(), _S_VERSION );
+	wp_enqueue_style( 'skyloportfolio-mobile', get_template_directory_uri() . '/mobile.css?n=9', array(), _S_VERSION );
 
-	wp_enqueue_script( 'skyloportfolio-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'skyloportfolio-main', get_template_directory_uri() . '/js/main.js?n=3', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -178,3 +178,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Add Portfolio post type
+function skyloportfolio_add_portfolio_post_type() {
+    $supports = array(
+        'title',
+    );
+
+    $labels = array(
+        'name' => 'Portfolio'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'menu_icon'            => 'dashicons-calendar-alt'
+    );
+
+    register_post_type("portfolio", $args);
+}
+
+add_action("init", "skyloportfolio_add_portfolio_post_type");

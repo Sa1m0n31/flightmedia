@@ -16,6 +16,15 @@ window.addEventListener("scroll", () => {
    }
 });
 
+/* Remove portfolio after pseudoelement */
+const portfolioTitles = document.querySelectorAll(".portfolio__item__title");
+portfolioTitles.forEach(item => {
+    console.log(item.textContent);
+   if(!item.textContent.length < 3) {
+       item.style.display = "none";
+   }
+});
+
 /* Portfolio menu */
 /* INFO - filtrowanie na podstwie atrybutu alt w img */
 const categoriesList = ['Wszystkie', 'Luftfoto', 'Bedrifts reklamer', 'Eiendom', 'Bryllup', 'Droneinspeksjon'];

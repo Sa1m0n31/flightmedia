@@ -4,14 +4,15 @@ get_header();
 
 <!-- LANDING -->
 <main class="landing">
+    <img class="landingBackground" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/landing.jpg'; ?>" alt="flightmedia-crew" />
     <header class="landing__content">
         <h1 class="landing__header">
-            Jakiś nagłówek
+            Flightmedia Crew
         </h1>
         <p class="landing__text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            Trenger du bilder i høyden? Kontakt oss!
         </p>
-        <a class="landing__btn" href="#contact">
+            <a class="landing__btn" href="#contact">
             Kontakt
         </a>
     </header>
@@ -126,21 +127,41 @@ get_header();
     <div class="portfolio__inner">
 
         <?php
-            for($i=0; $i<8; $i++) {
-                ?>
-                <div class="portfolio__item">
-                    <img class="portfolio__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/ferrari.png'; ?>" alt="portfolio-img" />
+            $args = array(
+                    'post_type' => 'portfolio',
+                    'posts_per_page' => 8
+            );
 
-                    <div class="portfolio__item__desc">
-                        <h5 class="portfolio__item__title">
-                            Tytuł pracy
-                        </h5>
-                        <p class="portfolio__item__text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                        </p>
+            $portfolioQuery = new WP_Query($args);
+
+            if($portfolioQuery->have_posts()) {
+                while($portfolioQuery->have_posts()) {
+                    $portfolioQuery->the_post();
+                    ?>
+                    <div class="portfolio__item">
+                        <img class="portfolio__img" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo get_field('kategoria'); ?>" />
+
+                        <div class="portfolio__item__desc">
+                            <h5 class="portfolio__item__title">
+                                <?php
+                                    if(get_field('naglowek')) {
+                                        echo get_field('naglowek');
+                                    }
+                                ?>
+                            </h5>
+                            <p class="portfolio__item__text">
+                                <?php
+                                    if(get_field('opis')) {
+                                        echo get_field('opis');
+                                    }
+                                ?>
+                            </p>
+                        </div>
                     </div>
-                </div>
+
+
         <?php
+                }
             }
         ?>
 

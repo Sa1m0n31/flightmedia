@@ -25,28 +25,41 @@
         <menu class="topMenu">
             <ul class="topMenu__mobile">
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">Luftfoto</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
+                        <span>Luftfoto</span>
+                    </a>
                 </li>
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/aerial-advertising.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">Bedrifts reklamer</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/aerial-advertising.svg'; ?>" alt="road" />
+                        <span>Bedrifts reklamer</span>
+                    </a>
                 </li>
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/property.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">Eiendom</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/property.svg'; ?>" alt="road" />
+                        <span>Eiendom</span>
+                    </a>
                 </li>
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/wedding-ring.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">Bryllup</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/wedding-ring.svg'; ?>" alt="road" />
+                        <span>Bryllup</span>
+                    </a>
+
                 </li>
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/drone.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">Droneinspeksjon</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/drone.svg'; ?>" alt="road" />
+                        <span>Droneinspeksjon</span>
+                    </a>
                 </li>
                 <li class="topMenu__item">
-                    <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
-                    <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">Portfolio</a>
+                    <a href="<?php echo get_page_link(get_page_by_title('Portfolio')->ID); ?>">
+                        <img class="topMenu__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/road.svg'; ?>" alt="road" />
+                        <span>Portfolio</span>
+                    </a>
                 </li>
             </ul>
             <div class="topMenu__hamburger" onclick="openMobileMenu()">

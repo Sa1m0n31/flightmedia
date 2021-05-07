@@ -18,33 +18,57 @@ get_header();
             </a>
         </button>
 
-        <img class="categoryMain__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/droneinspeksjon-background.jpg' ?>" alt="category-img" />
+        <img class="categoryMain__img" src="<?php echo get_field('zdjecie_kategorii'); ?>" alt="category-img" />
 
     </header>
 </main>
 <section class="categoryPortfolio">
-    <h2 class="categoryPortfolio__header">
-        Nylige prosjekter
-    </h2>
-
     <div class="categoryPortfolio__inner">
         <?php
-            for($i=0; $i<3; $i++) {
-                ?>
-                <div class="portfolio__item">
-                    <img class="portfolio__img" src="<?php get_bloginfo('stylesheet_directory') . '/assets/img/ferrari.png'; ?>" alt="portfolio-img" />
+        $args = array(
+            'post_type' => 'portfolio',
+            'posts_per_page' => 3,
+            'meta_key' => 'kategoria',
+            'meta_value' => get_the_title()
+        );
 
-                    <div class="portfolio__item__desc">
-                        <h5 class="portfolio__item__title">
-                            Tytuł pracy
-                        </h5>
-                        <p class="portfolio__item__text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                        </p>
+        $portfolioQuery = new WP_Query($args);
+
+        if($portfolioQuery->have_posts()) {
+            ?>
+            <h2 class="categoryPortfolio__header">
+                Nylige prosjekter
+            </h2>
+
+        <?php
+            while($portfolioQuery->have_posts()) {
+                $portfolioQuery->the_post();
+                    ?>
+                    <div class="portfolio__item">
+                        <img class="portfolio__img" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo get_field('kategoria'); ?>" />
+
+                        <div class="portfolio__item__desc">
+                            <h5 class="portfolio__item__title">
+                                <?php
+                                if(get_field('naglowek')) {
+                                    echo get_field('naglowek');
+                                }
+                                ?>
+                            </h5>
+                            <p class="portfolio__item__text">
+                                <?php
+                                if(get_field('opis')) {
+                                    echo get_field('opis');
+                                }
+                                ?>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <?php
+
+
+                    <?php
             }
+        }
         ?>
     </div>
 </section>

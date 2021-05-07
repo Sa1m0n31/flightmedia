@@ -42,6 +42,7 @@ ul {
 }
 
 .container {
+	min-height: 100vh;
 	width: 100%;
 	height: fit-content;
 	position: relative;
@@ -69,7 +70,7 @@ ul {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
-	z-index: 2;
+	z-index: 5;
 	transition: .5s all;
 	border-bottom: 1px solid  rgb(232, 200, 147);
 }
@@ -176,8 +177,23 @@ ul {
 	max-width: none;
 	height: 100vh;
 	min-height: 600px;
-	background: url("./assets/img/landing.png") fixed;
 	padding: 0 calc((100vw - 1600px) / 2);
+	position: relative;
+	overflow: hidden;
+}
+
+.landing * {
+	z-index: 2;
+}
+
+.landingBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100vw;
+	filter: brightness(0.3);
+	z-index: 1;
 }
 
 .landing__content {
@@ -209,6 +225,7 @@ ul {
 	margin: 30px 0 60px;
 	width: 600px;
 	font-family: 'Open sans', sans-serif;
+	position: relative;
 }
 
 .landing__btn {
@@ -223,6 +240,7 @@ ul {
 	font-family: 'Open sans', sans-serif;
 	transition: .2s all;
 	color: #fff;
+	position: relative;
 }
 
 .landing__btn:hover {
@@ -380,7 +398,7 @@ ul {
 
 .portfolio__img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	top: 0;
 	left: 0;
 }
@@ -584,6 +602,10 @@ textarea {
 .footer {
 	border-top: 1px solid  rgb(232, 200, 147);
 	padding: 10px 0 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .footer__label {
@@ -643,6 +665,7 @@ textarea {
 	height: auto;
 	display: block;
 	margin: 40px auto;
+	max-width: 90vw;
 }
 
 .categoryMain__btn {
@@ -675,6 +698,7 @@ textarea {
 	position: relative;
 	margin-bottom: 70px;
 	color: #fff;
+	width: 100%;
 }
 
 .categoryPortfolio__header::after {
@@ -690,8 +714,14 @@ textarea {
 
 .categoryPortfolio__inner {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	justify-content: center;
-	margin-bottom: 100px;
+	padding-bottom: 150px;
+}
+
+.categoryPortfolio__inner .portfolio__item {
+	max-width: 33%;
 }
 
 /* Portfolio */
