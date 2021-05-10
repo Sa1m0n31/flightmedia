@@ -351,7 +351,7 @@ ul {
 	background:   rgb(230, 198, 145);
 }
 
-.categories__text {
+.categories__item p {
 	font-size: 13px;
 	margin: 20px 0;
 	font-family: "Open sans", sans-serif;
@@ -534,6 +534,13 @@ ul {
 	margin: 30px auto;
 }
 
+.wpcf7-response-output {
+	padding: 10px !important;
+	color: #fff;
+	text-align: center;
+	border-color: rgb(232, 200, 147) !important;
+}
+
 .contact__form label, .contact__form input {
 	width: 100%;
 	display: flex;
@@ -594,6 +601,7 @@ textarea {
 	padding: 15px 80px;
 	margin: 20px auto;
 	display: block;
+	cursor: pointer;
 	transition: .2s all;
 	font-family: 'Open sans', sans-serif;
 }
@@ -769,7 +777,7 @@ textarea {
 }
 
 .portfolio__main {
-	margin: 50px auto 20px auto;
+	margin: 50px auto 100px auto;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
@@ -793,4 +801,8 @@ textarea {
 	opacity: 0;
 	z-index: -1;
 	transition: .3s all;
+}
+
+.wpcf7-not-valid-tip {
+	display: none !important;
 }

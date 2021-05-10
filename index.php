@@ -7,10 +7,10 @@ get_header();
     <img class="landingBackground" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/landing.jpg'; ?>" alt="flightmedia-crew" />
     <header class="landing__content">
         <h1 class="landing__header">
-            Flightmedia Crew
+            <?php echo get_field('naglowek_strony', 116); ?>
         </h1>
         <p class="landing__text">
-            Trenger du bilder i høyden? Kontakt oss!
+            <?php echo get_field('tekst_pod_naglowkiem_strony', 116); ?>
         </p>
             <a class="landing__btn" href="#contact">
             Kontakt
@@ -24,20 +24,13 @@ get_header();
         Om oss
     </h3>
     <div class="aboutUs__inner">
-        <img class="aboutUs__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/about-us.png'; ?>" alt="um-oss" />
+        <img class="aboutUs__img" src="<?php echo get_field('zdjecie_kategorii' ,99) ?>" alt="um-oss" />
         <div class="aboutUs__desc">
-            <h4 class="aboutUs__header">
-                Hei, så hyggelig at du tok oss til vurdering.
-            </h4>
-            <p class="aboutUs__text">
-                Hos Flightmedia møter du profesjonelle fotografer med bred kompetanse både innenfor film og fotografering. Vi tar bilder og film fra luften med topp moderne utstyr og har alle tillatelser for å kunne levere et godt produkt.
-            </p>
-            <p class="aboutUs__text">
-                Vi fanger momentene som får deg eller, bedriften din til å stråle. Vi jakter på de flyktige glimtene som rommer et lite blikk, som forsvinner like fort som de kom.
-            </p>
-            <p class="aboutUs__text">
-                Vi gir deg minner for resten av livet
-            </p>
+            <?php
+            $page_data = get_page_by_title('Om oss');
+            $content = apply_filters('the_content', $page_data->post_content);
+            echo $content;
+            ?>
         </div>
     </div>
 </section>
@@ -54,7 +47,11 @@ get_header();
                 Luftfoto
             </h4>
             <p class="categories__text">
-                Drone er blitt et vanlig redskap for fotografering og film. Bilder fra lufta gir unik oversikt og forteller om lokasjonen og størrelsen.
+                <?php
+                $page_data = get_page_by_title('Luftfoto');
+                $content = apply_filters('the_content', $page_data->post_content);
+                echo $content;
+                ?>
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Luftfoto')->ID); ?>">
                 Mer informasjon
@@ -67,7 +64,11 @@ get_header();
                 Bedrifts reklamer
             </h4>
             <p class="categories__text">
-                Bedrifts reklamer er en optimal løsning som kobler sammen kreativitet, med god forståelse for merkevaren. Dronefilm gjør som regel det lille ekstra innenfor en reklame. Bilder / video som skal selge må kommunisere godt, og jeg hjelper deg med det.
+                <?php
+                $page_data = get_page_by_title('Bedrifts reklamer');
+                $content = apply_filters('the_content', $page_data->post_content);
+                echo $content;
+                ?>
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bedrifts reklamer')->ID); ?>">
                 Mer informasjon
@@ -80,7 +81,11 @@ get_header();
                 Eiendom
             </h4>
             <p class="categories__text">
-                Vi tar foto og dronefoto av bygg og eiendom i forbindelse med salg, visualisering, dokumentasjon og utleie.
+                <?php
+                $page_data = get_page_by_title('Eiendom');
+                $content = apply_filters('the_content', $page_data->post_content);
+                echo $content;
+                ?>
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Eiendom')->ID); ?>">
                 Mer informasjon
@@ -93,7 +98,11 @@ get_header();
                 Bryllup
             </h4>
             <p class="categories__text">
-                Bryllupsfotografen dere velger har en stor påvirkning på hvordan dere vil huske denne dagen senere. Her er det kun fantasien som kan stoppe oss.
+                <?php
+                $page_data = get_page_by_title('Bryllup');
+                $content = apply_filters('the_content', $page_data->post_content);
+                echo $content;
+                ?>
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Bryllup')->ID); ?>">
                 Mer informasjon
@@ -106,7 +115,11 @@ get_header();
                 Droneinspeksjon
             </h4>
             <p class="categories__text">
-                Vi tilbyr inspeksjon av installasjoner, tak og andre elementer i høyden, på en enkel måte.
+                <?php
+                $page_data = get_page_by_title('Droneinspeksjon');
+                $content = apply_filters('the_content', $page_data->post_content);
+                echo $content;
+                ?>
             </p>
             <a class="categories__btn" href="<?php echo get_page_link(get_page_by_title('Droneinspeksjon')->ID); ?>">
                 Mer informasjon
@@ -186,9 +199,9 @@ get_header();
             </h4>
         </div>
 
-        <form class="contact__form">
+        <div class="contact__form">
             <?php echo do_shortcode('[contact-form-7 id="7" title="Formularz 1"]'); ?>
-        </form>
+        </div>
     </div>
 </section>
 
