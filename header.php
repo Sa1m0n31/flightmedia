@@ -76,7 +76,7 @@
                     <a href="<?php echo get_home_url() . '/#aboutUs'; ?>">Om oss</a>
                 </li>
                 <li class="topMenu__item topMenu__item--withDropdown">
-                    By pa
+                    Kategorier
                     <img class="topMenu__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/down.svg'; ?>" alt="down" />
                     <ul class="topMenu__dropdown">
                         <li class="topMenu__dropdown__item">

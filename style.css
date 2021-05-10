@@ -536,6 +536,9 @@ ul {
 
 .contact__form label, .contact__form input {
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
 }
 
 .contact__form label {
@@ -544,10 +547,12 @@ ul {
 }
 
 .contact__form__imgWrapper {
-	padding: 10px;
+	padding: 0 10px;
 	border: 1px solid  rgb(232, 200, 147);
 	border-right: none;
-	order: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact__form__icon {
@@ -596,6 +601,10 @@ textarea {
 .contact__form__btn:hover {
 	background: rgb(230, 198, 145);
 	color: #efefef;
+}
+
+.your-msg {
+	width: 74%;
 }
 
 /* Footer */

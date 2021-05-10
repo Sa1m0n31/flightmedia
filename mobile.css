@@ -84,6 +84,10 @@
 }
 
 @media(max-width: 1000px) {
+    .your-msg {
+        width: 100%;
+    }
+
     .aboutUs__text {
         margin: 20px auto !important;
     }

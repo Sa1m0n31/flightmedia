@@ -1,7 +1,7 @@
 <!-- FOOTER -->
 <footer class="footer">
     <h6 class="footer__label">
-        &copy; Copyright strona.no
+        &copy; Copyright flightmedia.no
     </h6>
     <h6 class="footer__label">
         Designed and created by <a href="https://skylo.pl" rel="noreferrer">skylo.pl</a>

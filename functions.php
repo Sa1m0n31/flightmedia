@@ -193,7 +193,7 @@ function skyloportfolio_add_portfolio_post_type() {
         'supports'             => $supports,
         'public'               => true,
         'capability_type'      => 'post',
-        'has_archive'          => true,
+        'has_archive'          => false,
         'menu_position'        => 30,
         'menu_icon'            => 'dashicons-calendar-alt'
     );

@@ -187,39 +187,7 @@ get_header();
         </div>
 
         <form class="contact__form">
-            <label>
-                <input class="contact__form__input"
-                       placeholder="Name"
-                />
-                <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/user_square.svg?n=1'; ?>" alt="name" />
-                </div>
-            </label>
-            <label>
-                <input class="contact__form__input"
-                       placeholder="Phone number"
-                />
-                <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/phone-call.svg?n=1'; ?>" alt="phone" />
-                </div>
-            </label>
-            <label>
-                <input class="contact__form__input"
-                       placeholder="Email"
-                />
-                <div class="contact__form__imgWrapper">
-                    <img class="contact__form__icon" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/img/mail.svg?n=1'; ?>" alt="mail" />
-                </div>
-            </label>
-            <label>
-                <textarea class="contact__form__input"
-                          placeholder="Melding"
-                ></textarea>
-            </label>
-
-            <button class="contact__form__btn" type="submit">
-                Send melding
-            </button>
+            <?php echo do_shortcode('[contact-form-7 id="7" title="Formularz 1"]'); ?>
         </form>
     </div>
 </section>

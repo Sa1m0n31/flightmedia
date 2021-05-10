@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<!-- CATEGORY MAIN -->
+ CATEGORY MAIN
 <main class="categoryMain">
     <h2 class="categoryMain__title">
         Portfolio
